@@ -1,6 +1,12 @@
+import { Outlet } from "react-router-dom";
+import NavBar from "./NavBar";
+import Home from "./Home";
 
 export default function App() {
   return (
-   <button>Hello</button>
+    <>
+      <NavBar />
+      <Outlet />
+    </>
   )
 }
