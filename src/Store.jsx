@@ -34,10 +34,10 @@ export default function Store() {
     }
     
     return(
-        <div className="flex bg-[#f6f6f6]">
-            <div className="sticky top-30 flex flex-col gap-10 flex-1 justify-center 
-            bg-[#fdfdfd] mt-10 ml-10 h-[450px] rounded-2xl shadow-2xl sm:min-w-[280px] 
-            max-w-[280px] p-5">
+        <div className="flex sm:flex-row sm:items-start items-center  flex-col bg-[#f6f6f6]">
+            <div className="sm:sticky sm:top-30 top-25  flex sm:flex-col gap-10 flex-1 sm:justify-center 
+            bg-[#fdfdfd] sm:mt-10 sm:ml-10 h-[450px] rounded-2xl shadow-2xl sm:min-w-[280px] w-[415px] sm:overflow-hidden
+            overflow-x-scroll max-w-[280px] p-5">
                 <SideButtons onClick={clickAllHandler} info={"All"} />
                 <SideButtons onClick={clickHandler} info={"Men's Clothing"} />
                 <SideButtons onClick={clickHandler} info={"Women's Clothing"} />

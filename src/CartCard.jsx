@@ -4,7 +4,7 @@ import { useOutletContext } from "react-router-dom";
 
 export default function CartCard({id, img, price, title, qnty, clickHandler}) {
     return (
-        <div className="flex p-10 gap-5  h-[176px] w-full overflow-hidden justify-between items-center">
+        <div className="flex p-10 gap-5  h-[176px] w-full justify-between items-center">
             <div className="min-h-[150px] min-w-[150px] bg-no-repeat bg-contain rounded-2xl border-2 border-black bg-center" style={{backgroundImage: `url(${img})`}}></div>
             <div className="flex flex-1 flex-col gap-5">
                 <div className="text-2xl ">{title}</div>

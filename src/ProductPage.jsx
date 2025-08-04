@@ -27,18 +27,17 @@ export default function ProductPage() {
 
     return(
         <>
-        <div className="flex flex-col sm:flex-row h-180 w-auto gap-10">
+        <div className="flex flex-col sm:flex-row h-180 w-auto gap-10 ">
             <div style={{backgroundImage: `url(${img})`}} 
-            className="flex-1 min-h-[200px] border-4 ml-20 mt-20 border-black rounded-3xl bg-contain bg-no-repeat bg-center h-[75%] w-[75%]"></div>
-            <div className="flex-1 flex gap-10 flex-col pt-20 pl-10 pr-10">
+            className="flex-1 min-h-[200px] border-4 sm:ml-20 sm:mt-20 self-center mt-10 border-black rounded-3xl bg-contain bg-no-repeat bg-center h-[75%] w-[75%]"></div>
+            <div className="flex-1 flex gap-10 flex-col sm:pt-20 pl-10 pr-10">
                 <div className="text-4xl ">{title}</div>
                 <div className="text-2xl">${price}</div>
-                
                 <div className="bg-"><h1 className="font-bold text-2xl">Description:</h1>
                 {description}
                 </div>
                 <input type="number" name="quantity" onChange={handleChange} id="quantity" min={1} value={qnty} className="border-4  w-50"/>
-                <button onClick={onClick} className=" text-amber-50 self-end active:scale-90 hover:scale-110 cursor-pointer transition h-10 w-30 rounded-2xl shadow-md bg-green-700">Buy</button>
+                <button onClick={onClick} className=" text-amber-50 self-end active:scale-90 hover:scale-110 cursor-pointer transition h-10 sm:w-30 w-full rounded-2xl shadow-md bg-green-700">Buy</button>
             </div>
         </div>
         </>
