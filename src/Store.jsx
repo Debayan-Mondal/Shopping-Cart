@@ -33,17 +33,18 @@ export default function Store() {
         filteredData = storeData.filter(element => element.category == category || isAll);
     }
     
-    console.log(filteredData);
     return(
-        <div className="flex ">
-            <div className="flex flex-col gap-10 flex-1 bg-[#d6e3ff] h-[auto] sm:min-w-[250px] max-w-[250px] p-2">
+        <div className="flex bg-[#f6f6f6]">
+            <div className="sticky top-30 flex flex-col gap-10 flex-1 justify-center 
+            bg-[#fdfdfd] mt-10 ml-10 h-[450px] rounded-2xl shadow-2xl sm:min-w-[280px] 
+            max-w-[280px] p-5">
                 <SideButtons onClick={clickAllHandler} info={"All"} />
                 <SideButtons onClick={clickHandler} info={"Men's Clothing"} />
                 <SideButtons onClick={clickHandler} info={"Women's Clothing"} />
                 <SideButtons onClick={clickHandler} info={"Jewelery"} />
                 <SideButtons onClick={clickHandler} info={"Electronics"} />
             </div>
-            <div className="flex flex-wrap justify-center items-center">
+            <div className="flex flex-wrap bg-[#f6f6f6] justify-center items-center">
                  {storeData ? (
                     filteredData.map(element => (
                         <Card key={element.id} description={element.description} id={element.id} img={element.image} price={element.price} title={element.title} />
