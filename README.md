@@ -24,11 +24,11 @@ A modern, responsive e-commerce storefront built using the **FakeStore API**. Th
 
 ---
 
-## 📦 Installation & Setup
+## Installation & Setup
 
 1.  **Clone the repository**
     ```bash
-    git clone [https://github.com/your-username/shopping-cart-api.git](https://github.com/your-username/shopping-cart-api.git)
+    git clone https://github.com/Debayan-Mondal/Shopping-Cart.git
     cd shopping-cart-api
     ```
 
@@ -47,7 +47,7 @@ A modern, responsive e-commerce storefront built using the **FakeStore API**. Th
 
 ---
 
-## 🔧 Core Implementation Logic
+## Core Implementation Logic
 
 ### Fetching Data
 The app utilizes the `useEffect` hook to fetch products from the API endpoint:
