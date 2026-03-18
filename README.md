@@ -1,15 +1,26 @@
-# React + Vite
+E-Shop: FakeStore Cart App
+A modern, responsive e-commerce storefront built using the FakeStore API. This application allows users to browse products, filter by categories, and manage a persistent shopping cart with real-time price calculations.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Features
+Product Catalog: Fetches and displays real-time data including titles, prices, descriptions, and high-quality images.
 
-Currently, two official plugins are available:
+Category Filtering: Quickly sort products by Electronics, Jewelry, Men's Clothing, or Women's Clothing.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Persistent Shopping Cart: Add or remove items and adjust quantities. The cart state is saved to localStorage to persist across page refreshes.
 
-## Expanding the ESLint configuration
+Dynamic Search: Filter products instantly using a search bar.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Responsive Design: Optimized for mobile, tablet, and desktop viewing.
 
 
-testing
+
+Tech Stack
+Frontend: React.js / Next.js (or your preferred framework)
+
+Styling: Tailwind CSS / Styled Components
+
+State Management: Context API / Redux Toolkit
+
+API: FakeStoreAPI
+
+Icons: Lucide-React
